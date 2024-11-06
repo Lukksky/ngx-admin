@@ -46,6 +46,7 @@ export const routes: Routes = [
     ],
   },
   { path: '', redirectTo: 'pages', pathMatch: 'full' },
+  { path: 'orgaopromotor', loadChildren: () => import('./orgaopromotor/orgaopromotor.module').then(m => m.OrgaopromotorModule) },
   { path: '**', redirectTo: 'pages' },
 ];
 
